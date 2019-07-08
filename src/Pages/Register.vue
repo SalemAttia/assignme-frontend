@@ -1,7 +1,7 @@
 <template>
-  <layout>
+  <layout :showheader="false">
     <h2>Register</h2>
-  </layout>  
+  </layout>
 </template>
 
 <script>

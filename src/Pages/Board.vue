@@ -1,7 +1,7 @@
 <template>
-  <layout>
+  <layout :showheader="true">
     <h2>Board</h2>
-  </layout>  
+  </layout>
 </template>
 
 <script>
