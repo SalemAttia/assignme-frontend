@@ -1,5 +1,5 @@
 <template>
-  <layout :showheader="true">
+  <layout :showheader="true" :footerheader="false">
     <h2>Home</h2>
   </layout>
 </template>

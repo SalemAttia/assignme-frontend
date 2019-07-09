@@ -2,15 +2,15 @@
   <section>
       <layout-header v-if="showheader"></layout-header>
       <slot></slot>
-      <footer></footer>
+      <layout-footer v-if="footerheader"></layout-footer>
   </section>
 </template>
 
 <script>
 import LayoutHeader from './Header.vue'
-import Footer from './Footer.vue'
+import LayoutFooter from './Footer.vue'
 export default {
-  props:['showheader'],
+  props:['showheader','footerheader'],
   name: 'login',
   data () {
     return {
@@ -19,7 +19,7 @@ export default {
   },
   components : {
       LayoutHeader,
-      Footer
+      LayoutFooter,
   }
 }
 </script>

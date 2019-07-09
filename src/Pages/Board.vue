@@ -1,11 +1,11 @@
 <template>
-  <layout :showheader="true">
-    <h2>Board</h2>
+  <layout :showheader="false">
+    <h1>Board</h1>
   </layout>
 </template>
 
 <script>
-import Layout from '../Layout/index.vue'
+import Layout from '../Layout/index.vue';
 export default {
   name: 'Board',
   data () {

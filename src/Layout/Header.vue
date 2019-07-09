@@ -2,7 +2,6 @@
   <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse">
             <div class="container">
                 <div class="navbar-header">
-
                     <!-- Collapsed Hamburger -->
                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                 <i class="fa fa-bars fa-2x"></i>
@@ -21,8 +20,8 @@
                         &nbsp;
                         <li><a href="/">Home</a></li>
 
-                        <li> <a style="cursor: pointer;" class="" data-toggle="modal" data-target="#myModal">
-                   Add new Task
+                        <li> <a href="/board" style="cursor: pointer;" class="" data-toggle="modal" data-target="#myModal">
+                   Board
                  </a></li>
                   <li>
                        <a style="cursor: pointer;" class="" data-toggle="modal" data-target="#myModal2">

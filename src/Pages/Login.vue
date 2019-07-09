@@ -1,5 +1,5 @@
 <template>
-  <layout :showheader="false">
+  <layout :showheader="false" :footerheader="false">
     <header class="intro">
       <div class="intro-body">
         <div class="container">
@@ -70,7 +70,7 @@ export default {
 </script>
 
 <style>
-.intro .intro-body 
+.intro .intro-body
 {
   padding: 192px 0;
 }
@@ -78,22 +78,25 @@ export default {
 {
   width: 81%;
   height: 42px;
-  background: rgba(165, 42, 42, 0.06); 
+  background: rgba(165, 42, 42, 0.06);
   color: #66afe9 !important;
 }
 .password-input
 {
   width: 81%;
   height: 42px;
-  background: rgba(165, 42, 42, 0.06); 
+  background: rgba(165, 42, 42, 0.06);
   color: #66afe9 !important;
 }
 .help-block strong
 {
   color:antiquewhite;
 }
-@media (max-width: 768px)
-section {
-     padding: 0 !important;
+ @media (min-width: 1370px)
+{
+  .intro .intro-body
+  {
+    padding: 100vh 0 !important;
+  }
 }
 </style>
