@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f5f7;
+    background-image: url(../image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    z-index: 0;
+    height: 100%;
+    position: relative;
+    overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(85, 150, 69, 1);
+    transition: all .2s ease-in-out;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #172b4d;
+    transition: all .2s ease-in-out;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #cccccc !important;
+}
+
+.all {
+    width: 170%;
+    position: relative;
+    top: 70px;
+}
+
+.red {
+    background-color: red !important;
+}
+
+.mr-auto {
+    margin-right: 50% !important;
+}
+
+.navbar {
+    background-color: transparent !important;
+}
+
+.nav-item {
+    background-color: rgb(128, 128, 128, .1);
+    border-radius: 15%;
+    margin: 5px;
+}
+
+.mr-sm-2 {
+    background-color: rgb(128, 128, 128, .1);
+}
+
+.name {
+    text-align: center;
+    position: relative;
+    margin-left: 55%;
+    padding: 10px;
+    background-color: rgb(128, 128, 128, .1);
+    border-radius: 8%;
+    line-height: 2em;
+    font-size: medium;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.name:hover {
+    color: #cccccccc;
+    transition: all .2s ease-in-out;
+}
+
+.firstdiv {
+    width: 240px;
+    width: 240px;
+    margin: 10px;
+    overflow: hidden;
+    background-color: #ccc;
+    line-height: 2em;
+    border-radius: 4px;
+    float: left;
+}
+
+.h1 {
+    font-weight: 600;
+    margin: 0 0 0 7px;
+    font-size: 15px;
+}
+
+.dot {
+    float: right;
+    width: 20px !important;
+    text-align: center !important;
+    border-radius: 5px;
+}
+
+.dot:hover {
+    background-color: #6b778c;
+    transition: all .2s ease-in-out;
+}
+
+.clear {
+    clear: both;
+}
+
+h2 {
+    margin: 0 0 0 7px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.end span {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 5px;
+}
+
+.end {
+    background-color: white;
+    margin-bottom: 13px;
+}
+
+
+/**/
+
+.secdiv {
+    width: 240px;
+    margin: 10px;
+    background-color: #ccc;
+    line-height: 2em;
+    border-radius: 4px;
+    overflow-y: scroll;
+    float: left;
+    height: 85vh;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.list-card-details {
+    overflow: hidden;
+    padding: 6px 8px 2px;
+    position: relative;
+    z-index: 10;
+}
+
+.list-card-labels {
+    overflow: auto;
+    position: relative;
+}
+
+a {
+    color: #172b4d;
+}
+
+.card-label.mod-card-front {
+    float: left;
+    font-size: 12px;
+    font-weight: 700;
+    height: 8px;
+    line-height: 100px;
+    max-width: 40px;
+    min-width: 40px;
+    padding: 0;
+    text-shadow: none;
+    width: auto;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-font-smoothing: antialiased;
+}
+
+.card-label-green {
+    background-color: #61bd4f;
+}
+
+.list-card-title {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    word-wrap: break-word;
+    color: #172b4d;
+}
+
+.header {
+    margin: 4px;
+}
+
+.list-card {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+.js-card-name {
+    text-decoration: none;
+}
+
+.list-card {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(9, 30, 66, .25);
+    cursor: pointer;
+    display: block;
+    margin: 0 6px 6px 6px;
+    max-width: 300px;
+    min-height: 20px;
+    position: relative;
+    text-decoration: none;
+    z-index: 0;
+}
+
+.js-card-details:hover {
+    background-color: #f4f5f7;
+    transition: all .3s ease-in-out;
+}
+
+.card-label-yellow {
+    background-color: #f2d600;
+}
+
+
+/**/
+
+.thirddiv {
+    overflow: hidden;
+    width: 240px;
+    margin: 10px;
+    background-color: #ccc;
+    line-height: 1.5em;
+    border-radius: 4px;
+    overflow-y: scroll;
+    float: left;
+    height: 85vh;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.list-card-title {
+    font-size: 13px !important;
+}
+
+.comment {
+    color: #6b778c;
+    margin-top: -5px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    padding: 1px;
+}
+
+.card-label-purple {
+    background-color: #c377e0;
+}
+
+
+/**/
+
+.forthdiv,
+.fivediv,
+.sixdiv,
+.sevendiv {
+    overflow: hidden;
+    width: 240px;
+    margin: 10px;
+    background-color: #ccc;
+    line-height: 2em;
+    border-radius: 4px;
+    float: left;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.eightdiv {
+    overflow: hidden;
+    width: 240px;
+    margin: 10px;
+    background-color: #ccc;
+    line-height: 2em;
+    border-radius: 4px;
+    float: left;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
