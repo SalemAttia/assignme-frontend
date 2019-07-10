@@ -44,6 +44,7 @@
                   <div class="form-group">
                     <div class="col-md-6 col-md-offset-4">
                       <button type="submit" class="btn btn-primary">Register</button>
+                      <a href="/login" >Have account Login</a>
                     </div>
                   </div>
                 </form>
@@ -73,7 +74,7 @@ export default {
 
 <style>
 body {
-  background-image: url(../assets/image/register.jpg);
+  background-image: url(../assets/img/5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
