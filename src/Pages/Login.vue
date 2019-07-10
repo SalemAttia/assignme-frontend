@@ -43,7 +43,7 @@
                 <div class="col-md-8">
                   <button type="submit" class="btn btn-primary">Login</button>
 
-                  <a class="btn btn-link" href="#">Forgot Your Password?</a>
+                  <a class="btn btn-link" href="/register">register</a>
                 </div>
               </div>
             </form>
