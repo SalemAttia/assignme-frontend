@@ -2,7 +2,8 @@
   <layout :showheader="false" v-if="dataReady">
     <board-nav></board-nav>
     <div class="all">
-        <board-col v-for="(card,index) in cards" :key="'row'+index" :index="index" :data="card"></board-col>
+        <board-col v-for="(column,index) in columns" :key="'row'+index" :index="index" :data="column"></board-col>
+        <Add-coulm :data="columns"></Add-coulm>
     </div>
   </layout>
 </template>
@@ -11,6 +12,7 @@
 import Layout from '../Layout/index.vue';
 import BoardNav from '../Component/Board-nav.vue';
 import BoardCol from '../Component/Board-col.vue';
+import AddCoulm from '../Component/AddCoulm.vue';
 import { getBoard } from '../services/Board/index.js';
 
 
@@ -20,7 +22,7 @@ export default {
     return {
       msg: '',
       dataReady : false,
-      cards: [],
+      columns: [],
     }
   },
   mounted:  function() {
@@ -31,7 +33,7 @@ export default {
   methods: {
       getAllUsers() {
           getBoard().then(data => {
-              this.cards = data.cards;
+              this.columns = data.columns;
           });
     },
   },
@@ -39,6 +41,7 @@ export default {
     Layout,
     BoardNav,
     BoardCol,
+    AddCoulm
   }
 }
 </script>

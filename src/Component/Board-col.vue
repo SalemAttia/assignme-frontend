@@ -1,22 +1,29 @@
 <template>
 <div>
   <div class="firstdiv">
-    <imagecard></imagecard>
-    <labelitem></labelitem>
+     <div class="header">
+      <span class="h1">{{data.name}}</span>
+      <span class="dot">
+        <i class="far fa-ellipsis-h"></i>
+      </span>
+    </div>
+    <CardsList v-for="(card, index) in data.cards" :key="`${'card'}${index}`" :data="card"></CardsList>
+    <Add-item :data="data.cards" :index="index"></Add-item>
   </div>
 </div>
 </template>
 <script>
 
-import imagecard from '../Component/Image-card.vue';
-import labelitem from '../Component/Label-item.vue';
+import CardsList from '../Component/CardsList.vue';
+import AddItem from '../Component/Add-item.vue';
+
 
 export default {
   name:"boardcol",
   props:['data','index'],
 components: {
-  imagecard,
-  labelitem,
+  CardsList,
+  AddItem
   }
 }
 </script>

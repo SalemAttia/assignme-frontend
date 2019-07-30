@@ -6,7 +6,7 @@
                         <span class="card-label card-label-green mod-card-front"></span>
                     </div>
                     <span class="list-card-title js-card-name" dir="auto">
-                    Team Crud
+                    {{data.name}}
                 </span>
                     <div class="badges">
                         <span class="js-badges"></span>
@@ -23,9 +23,8 @@
 </template>
 
  <script>
- import { getBoard } from '../services/Board/index.js';
-
  export default {
    name:"labelitem",
+   props: ['data','index']
  }
  </script>
