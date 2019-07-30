@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="header">
-      <span class="h1">wellcome</span>
+      <span class="h1">{{data.start}}</span>
       <span class="dot">
         <i class="far fa-ellipsis-h"></i>
       </span>
@@ -25,7 +25,9 @@
 
 <script>
 export default {
-  name: "imagecard"
+  name: "imagecard",
+  props:['data','index']
+
 };
 </script>
 

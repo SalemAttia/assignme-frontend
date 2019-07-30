@@ -13,6 +13,7 @@ import labelitem from '../Component/Label-item.vue';
 
 export default {
   name:"boardcol",
+  props:['data','index'],
 components: {
   imagecard,
   labelitem,
