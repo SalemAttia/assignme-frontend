@@ -23,7 +23,7 @@ export const getList = (limit = 10) => {
 
 export const getUsers = () => {
   return new Promise(resolve => {
-   
+
         resolve({
           boards: [
             {

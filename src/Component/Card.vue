@@ -5,7 +5,7 @@
             <h3><a :href="`${url}${data.id}`">{{data.name}} </a></h3>
           </div>
       </li>
- 
+
 </template>
 
 <script>
@@ -19,7 +19,7 @@ export default {
         url:'/board/'
     }
   },
-   
+
 }
 </script>
 

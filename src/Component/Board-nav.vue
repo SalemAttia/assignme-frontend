@@ -89,6 +89,7 @@
 
 
 <script>
+import { getBoard } from '../services/Board/index.js';
 export default {
   name: "boardnav",
   data() {
