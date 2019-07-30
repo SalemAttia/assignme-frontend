@@ -8,7 +8,7 @@ export const routes = [
     { path: '/', component: Home, name: 'Home' },
     { path: '/login', component: login, name: 'login' },
     { path: '/register', component: Register, name: 'register' },
-    { path: '/board', component: Board, name: 'Board' },
+    { path: '/board/:id', component: Board, name: 'Board' },
     { path: '/not-found', component: NotFound, name: 'Not-found' },
     { path: '*', redirect: '/not-founded' },
 ];

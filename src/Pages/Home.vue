@@ -1,31 +1,13 @@
 <template>
-  <layout :showheader="true" :footerheader="false">
+  <layout :showheader="true" :footerheader="false" v-if="dataReady">
     <section class="our-webcoderskull padding-lg">
   <div class="container">
     <div class="row heading heading-icon">
         <h2>Your Boards</h2>
     </div>
     <ul class="row">
-      <li class="col-12 col-md-6 col-lg-3">
-          <div class="cnt-block equal-hight">
-            <h3><a href="#">Atul </a></h3>
-          </div>
-      </li>
-      <li class="col-12 col-md-6 col-lg-3">
-          <div class="cnt-block equal-hight">
-            <h3><a href="#">Atul </a></h3>
-          </div>
-      </li>
-      <li class="col-12 col-md-6 col-lg-3">
-          <div class="cnt-block equal-hight">
-            <h3><a href="#">Atul </a></h3>
-          </div>
-      </li>
-      <li class="col-12 col-md-6 col-lg-3">
-          <div class="cnt-block equal-hight">
-            <h3><a href="#">Atul </a></h3>
-          </div>
-      </li>
+      <Card v-for="(board,index) in boards" :key="'row'+index" :index="index" :data="board"></Card>
+      
     </ul>
   </div>
 </section>
@@ -34,15 +16,34 @@
 
 <script>
 import Layout from '../Layout/index.vue'
+import Card from '../Component/Card.vue'
+import { getUsers } from '../services/user/index.js'
 export default {
   name: 'Home',
   data () {
     return {
-      msg: ''
+      msg: '',
+      dataReady:false,
+      boards: []
     }
   },
+  mounted:  function() {
+      this.getAllUsers();
+      this.dataReady = true;
+     
+  },
+  methods: {
+      getAllUsers() {
+          getUsers().then(data => {
+              this.boards = data.boards;
+          });
+    },
+  },
+  
+
   components: {
     Layout,
+    Card
   }
 }
 </script>
