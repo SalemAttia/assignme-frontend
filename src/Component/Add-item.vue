@@ -1,7 +1,7 @@
 <template>
   <div>
     <button class="list-card text-center" @click="addItem">
-       Add new 
+       Add new
     </button>
   </div>
 </template>
@@ -12,7 +12,7 @@
    props: ['data','index'],
    methods: {
        addItem() {
-      
+         this.$emit ('newitem', this.data)
        }
    }
  }

@@ -7,7 +7,6 @@
     </div>
     <ul class="row">
       <Card v-for="(board,index) in boards" :key="'row'+index" :index="index" :data="board"></Card>
-      
     </ul>
   </div>
 </section>
@@ -30,7 +29,7 @@ export default {
   mounted:  function() {
       this.getAllUsers();
       this.dataReady = true;
-     
+
   },
   methods: {
       getAllUsers() {
@@ -39,7 +38,7 @@ export default {
           });
     },
   },
-  
+
 
   components: {
     Layout,
@@ -77,26 +76,26 @@ ul{
     padding-bottom: 55px;
     padding-top: 55px;
 }
-.practice-area .inner{ 
-     border:1px solid #999999; 
-	 text-align:center; 
-	 margin-bottom:28px; 
+.practice-area .inner{
+     border:1px solid #999999;
+	 text-align:center;
+	 margin-bottom:28px;
 	 padding:40px 25px;
 }
 .our-webcoderskull .cnt-block:hover {
     box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
     border: 0;
 }
-.practice-area .inner h3{ 
-    color:#3c3c3c; 
-	font-size:24px; 
+.practice-area .inner h3{
+    color:#3c3c3c;
+	font-size:24px;
 	font-weight:500;
 	font-family: 'Poppins', sans-serif;
 	padding: 10px 0;
 }
-.practice-area .inner p{ 
-    font-size:14px; 
-	line-height:22px; 
+.practice-area .inner p{
+    font-size:14px;
+	line-height:22px;
 	font-weight:400;
 }
 .practice-area .inner img{
@@ -108,31 +107,31 @@ ul{
   background: url("http://www.webcoderskull.com/img/right-sider-banner.png") no-repeat center ;
   height:100vh;
 }
-.our-webcoderskull .cnt-block{ 
-   float:left; 
-   width:100%; 
-   background:#fff; 
-   padding:30px 20px; 
-   text-align:center; 
+.our-webcoderskull .cnt-block{
+   float:left;
+   width:100%;
+   background:#fff;
+   padding:30px 20px;
+   text-align:center;
    border:2px solid #d5d5d5;
    margin: 0 0 28px;
 }
 .our-webcoderskull .cnt-block figure{
-   width:148px; 
-   height:148px; 
-   border-radius:100%; 
+   width:148px;
+   height:148px;
+   border-radius:100%;
    display:inline-block;
    margin-bottom: 15px;
 }
-.our-webcoderskull .cnt-block img{ 
-   width:148px; 
-   height:148px; 
-   border-radius:100%; 
+.our-webcoderskull .cnt-block img{
+   width:148px;
+   height:148px;
+   border-radius:100%;
 }
-.our-webcoderskull .cnt-block h3{ 
-   color:#2a2a2a; 
-   font-size:20px; 
-   font-weight:500; 
+.our-webcoderskull .cnt-block h3{
+   color:#2a2a2a;
+   font-size:20px;
+   font-weight:500;
    padding:6px 0;
    text-transform:uppercase;
 }
@@ -143,25 +142,25 @@ ul{
 .our-webcoderskull .cnt-block h3 a:hover{
 	color:#337ab7;
 }
-.our-webcoderskull .cnt-block p{ 
-   color:#2a2a2a; 
-   font-size:13px; 
-   line-height:20px; 
+.our-webcoderskull .cnt-block p{
+   color:#2a2a2a;
+   font-size:13px;
+   line-height:20px;
    font-weight:400;
 }
 .our-webcoderskull .cnt-block .follow-us{
 	margin:20px 0 0;
 }
-.our-webcoderskull .cnt-block .follow-us li{ 
-    display:inline-block; 
-	width:auto; 
+.our-webcoderskull .cnt-block .follow-us li{
+    display:inline-block;
+	width:auto;
 	margin:0 5px;
 }
-.our-webcoderskull .cnt-block .follow-us li .fa{ 
-   font-size:24px; 
+.our-webcoderskull .cnt-block .follow-us li .fa{
+   font-size:24px;
    color:#767676;
 }
-.our-webcoderskull .cnt-block .follow-us li .fa:hover{ 
+.our-webcoderskull .cnt-block .follow-us li .fa:hover{
    color:#025a8e;
 }
 

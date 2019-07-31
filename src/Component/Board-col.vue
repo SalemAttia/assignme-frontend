@@ -8,7 +8,7 @@
       </span>
     </div>
     <CardsList v-for="(card, index) in data.cards" :key="`${'card'}${index}`" :data="card"></CardsList>
-    <Add-item :data="data.cards" :index="index"></Add-item>
+    <Add-item :data="data.cards" :index="index" @newitem = "addNewitem"></Add-item>
   </div>
 </div>
 </template>
@@ -24,6 +24,22 @@ export default {
 components: {
   CardsList,
   AddItem
+  },
+  methods:
+  {
+    addNewitem :function(data)
+    {
+      this.data.cards.push(
+        {
+          id:5,
+          name:'imag mahmoud',
+          type:'img',
+          content:'random test',
+          img:'',
+         order:5,
+        }
+      );
+    }
   }
 }
 </script>
