@@ -31,11 +31,11 @@ export default {
 {
   margin:0px 14px 12px;
 }
-.js-card-cover {
+/* .js-card-cover {
   background-color: rgb(244, 244, 244);
   background-image: url(../assets/image/welcome.png);
   height: 232px;
   background-size: contain;
-}
+} */
 </style>
 
