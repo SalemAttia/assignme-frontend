@@ -1,6 +1,5 @@
 <template>
-  <layout :showheader="false" v-if="dataReady">
-    <board-nav></board-nav>
+  <layout :showheader="true" v-if="dataReady">
     <div class="all">
         <board-col v-for="(column,index) in columns" :key="'row'+index" :index="index" :data="column"></board-col>
         <Add-coulm :data="columns"></Add-coulm>
