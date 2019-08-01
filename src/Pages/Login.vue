@@ -12,7 +12,7 @@
             <p class="intro-text">Work - haveFun (task manager)</p>
           </div>
           <div class="col-md-5">
-            <form class="form-horizontal" role="form" method="POST" action>
+            <form class="form-horizontal">
               <div class="form-group">
                 <div class="col-md-12">
                   <input
@@ -54,7 +54,7 @@
               </div>
               <div class="form-group">
                 <div class="col-md-8">
-                  <button type="submit" class="btn btn-primary">Login</button>
+                  <button type="submit" @click.prevent="login" class="btn btn-primary">Login</button>
 
                   <a class="btn btn-link" href="/register">register</a>
                 </div>
@@ -73,8 +73,20 @@ export default {
   name: "Login",
   data() {
     return {
-      msg: ""
+      name: '',
+      password:''
     };
+  },
+  methods: {
+    login() {
+      localStorage.setItem('jwt',this.name);
+      if(this.$route.params.nextUrl != null){
+          this.$router.push(this.$route.params.nextUrl)
+        }else{
+          this.$router.push({name:'Home'})
+        }
+      
+    }
   },
   components: {
     Layout
