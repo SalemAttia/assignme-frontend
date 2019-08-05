@@ -38,16 +38,16 @@ export const getBoard = () => {
                   order:1,
                 },
                 {
-                  id:2,
-                  name:'salem',
+                  id:3,
+                  name:'mahmoud',
                   type:'label',
-                  content:'some random test',
+                  content:'test',
                   img:'',
-                  order:1,
+                  order:2,
                 }
               ],
             },
-           
+
           ]
         })
       });

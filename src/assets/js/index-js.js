@@ -4,7 +4,7 @@
         /*window.console.log($('.navbar').height());
         window.console.log($(window).scrollTop());
         var nav = $('.navbar');
-        if($(window).scrollTop() >= nav.height()) 
+        if($(window).scrollTop() >= nav.height())
             {
                 nav.addClass('red');
             }
@@ -13,6 +13,6 @@
                 nav.removeClass('red');
             }
     });
-    
-    
+
+
 });*/
