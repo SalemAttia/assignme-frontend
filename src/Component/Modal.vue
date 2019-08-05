@@ -7,10 +7,10 @@
               </div>
               <div class="modal-body">
                 <div class="container-fluid">
-                  <label>Content</label><input type="text" class="form-control" v-model="data.content">
-                  <label>Id</label><input type="text" class="form-control" v-model="data.id">
-                  <img :src="previewImage" class="uploading-image" />
-                  <input type="file" accept="image/jpeg" @change=uploadImage>
+                  <label>Title</label><input type="text" class="form-control" v-model="data.name">
+                  <label>Content</label><textarea v-model="data.content" class="form-control"></textarea>
+                  <!-- <img :src="previewImage" class="uploading-image" />
+                  <input type="file" accept="image/jpeg" @change=uploadImage> -->
                 </div>
               </div>
               <div class="modal-footer">
