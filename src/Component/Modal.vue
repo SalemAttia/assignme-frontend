@@ -11,6 +11,7 @@
                   <label>Content</label><textarea v-model="data.content" class="form-control"></textarea>
                   <!-- <img :src="previewImage" class="uploading-image" />
                   <input type="file" accept="image/jpeg" @change=uploadImage> -->
+                  <!--ya salem ya 3l2-->
                 </div>
               </div>
               <div class="modal-footer">
