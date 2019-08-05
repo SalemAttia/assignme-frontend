@@ -4,6 +4,8 @@
     <div class="all">
         <board-col v-for="(column,index) in columns" :key="'row'+index" :index="index" :data="column"></board-col>
         <Add-coulm :data="columns"></Add-coulm>
+
+
     </div>
   </layout>
 </template>
@@ -14,10 +16,14 @@ import BoardNav from '../Component/Board-nav.vue';
 import BoardCol from '../Component/Board-col.vue';
 import AddCoulm from '../Component/AddCoulm.vue';
 import { getBoard } from '../services/Board/index.js';
+import modal from '../Component/modal.vue';
+
+
 
 
 export default {
   name: 'Board',
+  props : ["data", "index"],
   data () {
     return {
       msg: '',
@@ -36,14 +42,17 @@ export default {
               this.columns = data.columns;
           });
     },
+
   },
   components: {
     Layout,
     BoardNav,
     BoardCol,
-    AddCoulm
+    AddCoulm,
+    modal
   }
 }
+
 </script>
 
 <style >

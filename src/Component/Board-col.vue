@@ -2,7 +2,7 @@
 <div>
   <div class="firstdiv">
      <div class="header">
-      <span class="h1">{{data.name}}</span>
+      <span class="h1"><input v-model="data.name" /></span>
       <span class="dot">
         <i class="far fa-ellipsis-h"></i>
       </span>
@@ -32,8 +32,8 @@ components: {
       this.data.cards.push(
         {
           id:5,
-          name:'imag mahmoud',
-          type:'img',
+          name:'text ',
+          type:'label',
           content:'random test',
           img:'',
          order:5,
