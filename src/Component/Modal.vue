@@ -65,10 +65,6 @@ export default {
   height: 150px;
   margin: 5px 0
 }
-/* .modal-dialog
-{
-  width:370px ;
-}*/
 .modal-header h1
 {
  margin:0
